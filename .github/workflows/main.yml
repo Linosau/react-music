@@ -15,10 +15,11 @@ jobs:
         with:
           persist-credentials: false
 
-      # - name: Use Node.js 10.x
-      #   uses: actions/setup-node@v1
-      #   with:
-      #   node-version: 10.x
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Run a one-line script
         run: echo Hello, worlds!
@@ -30,7 +31,7 @@ jobs:
 
       # react项目的FOLDER为build，vue项目改为dist
       - name: Deploy
-        uses: Linosau/react-music@master
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
