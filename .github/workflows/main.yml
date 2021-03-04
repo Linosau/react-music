@@ -1,5 +1,8 @@
 name: Continuous Deploy
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build-job:
@@ -7,19 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
-          node-version: 10.x
+        persist-credentials: false
 
-      # - name: Run a one-line script
-      #   run: echo Hello, world!
+      # - name: Use Node.js 10.x
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 10.x
 
-      - name: Build and Deploy
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Install and Build
         run: |
           npm install
           npm run build
-        env:
-          CI: true
+
+      # react项目的FOLDER为build，vue项目改为dist   
+      - name: Deploy
+        uses: Linosau/react-music@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          BUILD_SCRIPT: npm install && npm run build
