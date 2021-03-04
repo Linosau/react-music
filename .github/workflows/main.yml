@@ -21,7 +21,7 @@ jobs:
       #   node-version: 10.x
 
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo Hello, worlds!
 
       - name: Install and Build
         run: |
