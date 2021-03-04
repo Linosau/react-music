@@ -29,6 +29,7 @@
     "test": "craco test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://Linosau.github.io/react-music",
   "eslintConfig": {
     "extends": "react-app"
   },
