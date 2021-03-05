@@ -46,4 +46,4 @@ jobs:
           server: '${{ secrets.SERVER_IP }}'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: './build/*'
-          remote_path: '/root/nginx/sanlin/react-app'
+          remote_path: '/root/nginx/sanlin/react-music'
