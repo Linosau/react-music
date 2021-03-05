@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1a573d014388018ded02070c57f53c7",
+    "revision": "0cc8a877efae852e8ef3f807fcfc8ea8",
     "url": "/react-music/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-music/static/css/2.b6fc26fc.chunk.css"
   },
   {
-    "revision": "005f12f73eabc532817e",
+    "revision": "3c27a2303f6e2f3f1264",
     "url": "/react-music/static/css/main.de7f0533.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-music/static/js/2.e180676d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "005f12f73eabc532817e",
-    "url": "/react-music/static/js/main.57cb4239.chunk.js"
+    "revision": "3c27a2303f6e2f3f1264",
+    "url": "/react-music/static/js/main.be75aea1.chunk.js"
   },
   {
     "revision": "570254a9e937af59b060",
