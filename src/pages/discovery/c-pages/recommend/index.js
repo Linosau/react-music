@@ -1,3 +1,11 @@
+/*
+ * @Author: Linosau
+ * @Date: 2020-09-11 01:10:14
+ * @LastEditTime: 2021-07-13 13:36:48
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /react-music/src/pages/discovery/c-pages/recommend/index.js
+ */
 import React, { memo, useEffect } from 'react'
 import { useDispatch, useSelector, shallowEqual } from 'react-redux'
 import {
@@ -16,7 +24,7 @@ export default memo(function Recommand (props) {
 
   return (
     <div>
-    Recommand { topBanner.length }
+    Recommand { topBanner.length } ahhahahaha
     </div>
   )
 })
